@@ -335,7 +335,7 @@
         },
         {
             "name": "TesteComponent",
-            "id": "component-TesteComponent-2cf574b65ec6235794b6e1c0a8be3f4d87f29ec6f76466ad7ec871a5451486003cde0d3cc103f71db0664b80fc84451c0b8bf23f633f7d4784043e5c1b0e1709",
+            "id": "component-TesteComponent-008e2f4c81197b9d5595f3d4a857a6548a17dc30346e75539f603f8e94c7a3c7987583471c80760ddb1087070684bbd55fdc1c568e0b526d5fb524bc59d5695d",
             "file": "projects/ui/src/lib/teste/teste.component.ts",
             "encapsulation": [],
             "entryComponents": [],
@@ -365,16 +365,16 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'lib-teste',\n  templateUrl: './teste.component.html',\n  styleUrls: ['./teste.component.scss']\n})\nexport class TesteComponent {\n\n}\n",
+            "sourceCode": "import { CUSTOM_ELEMENTS_SCHEMA, Component } from '@angular/core';\n\n@Component({\n  selector: 'lib-teste',\n  templateUrl: './teste.component.html',\n  styleUrls: ['./teste.component.scss'],\n})\nexport class TesteComponent {}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "$color: \"red\";\n\np {\n  color: $color;\n}\n",
+                    "data": "$color: red;\n\np {\n  color: $color;\n}\n",
                     "styleUrl": "./teste.component.scss"
                 }
             ],
             "stylesData": "",
-            "templateData": "<p>teste works!</p>\n"
+            "templateData": "<p>teste works!</p>\n<button mat-button color=\"primary\">Button</button>\n"
         },
         {
             "name": "UiComponent",
@@ -413,14 +413,14 @@
     ],
     "modules": [
         {
-            "name": "UiModule",
-            "id": "module-UiModule-fc66192e466efd2fc030d2c78490187f5fd9f26f53a060ac7532b53e32c79e96b54593abf7c49cd72251eecbf6b80060af451dfc1edf9779badc4b105206197e",
+            "name": "TesteModule",
+            "id": "module-TesteModule-b4231d4fa70e2c41efd2ecf421a3d16281bb835557801608c829382230301101224fce310db311367c16cf19bb7b65e5d7d4f1ec2009d551f35eb5b84904b137",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
-            "file": "projects/ui/src/lib/ui.module.ts",
+            "file": "projects/ui/src/lib/teste/teste.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { UiComponent } from './ui.component';\nimport { TesteComponent } from './teste/teste.component';\n\n\n\n@NgModule({\n  declarations: [\n    UiComponent,\n    TesteComponent\n  ],\n  imports: [\n  ],\n  exports: [\n    UiComponent\n  ]\n})\nexport class UiModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { CommonModule } from '@angular/common';\nimport { TesteComponent } from './teste.component';\nimport { MatButtonModule } from '@angular/material/button';\n\n@NgModule({\n  declarations: [TesteComponent],\n  imports: [CommonModule, MatButtonModule],\n  exports: [TesteComponent],\n})\nexport class TesteModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -431,7 +431,48 @@
                     "elements": [
                         {
                             "name": "TesteComponent"
-                        },
+                        }
+                    ]
+                },
+                {
+                    "type": "imports",
+                    "elements": []
+                },
+                {
+                    "type": "exports",
+                    "elements": [
+                        {
+                            "name": "TesteComponent"
+                        }
+                    ]
+                },
+                {
+                    "type": "bootstrap",
+                    "elements": []
+                },
+                {
+                    "type": "classes",
+                    "elements": []
+                }
+            ]
+        },
+        {
+            "name": "UiModule",
+            "id": "module-UiModule-6c68897ae9544d8fdd82d186e44b392895a5c2ee383f0702b299c1309f2032cc73f42a12ce4127a9cb8333231daf3d3f9d01ea8847a1fea6be451218e994a7d3",
+            "description": "",
+            "deprecationMessage": "",
+            "deprecated": false,
+            "file": "projects/ui/src/lib/ui.module.ts",
+            "methods": [],
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { UiComponent } from './ui.component';\nimport { TesteComponent } from './teste/teste.component';\n\n@NgModule({\n  declarations: [UiComponent],\n  imports: [],\n  exports: [UiComponent],\n})\nexport class UiModule {}\n",
+            "children": [
+                {
+                    "type": "providers",
+                    "elements": []
+                },
+                {
+                    "type": "declarations",
+                    "elements": [
                         {
                             "name": "UiComponent"
                         }
@@ -462,6 +503,16 @@
     ],
     "miscellaneous": {
         "variables": [
+            {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/teste/teste.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
+            },
             {
                 "name": "Large",
                 "ctype": "miscellaneous",
@@ -543,6 +594,16 @@
                 "defaultValue": "{\n  title: 'Example/Page',\n  component: Page,\n  parameters: {\n    // More on how to position stories at: https://storybook.js.org/docs/angular/configure/story-layout\n    layout: 'fullscreen',\n  },\n  decorators: [\n    moduleMetadata({\n      declarations: [Button, Header],\n      imports: [CommonModule],\n    }),\n  ],\n}"
             },
             {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/teste/teste.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<TesteComponent>",
+                "defaultValue": "{\n  title: 'TesteComponent',\n  component: TesteComponent,\n  decorators: [\n    moduleMetadata({\n      declarations: [],\n      imports: [TesteModule],\n    }),\n  ],\n  argTypes: {\n    backgroundColor: { control: 'color' },\n  },\n}"
+            },
+            {
                 "name": "preview",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -617,10 +678,43 @@
                 "deprecationMessage": "",
                 "description": "",
                 "kind": 180
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<TesteComponent>",
+                "file": "projects/ui/src/lib/teste/teste.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 180
             }
         ],
         "enumerations": [],
         "groupedVariables": {
+            "projects/ui/src/lib/teste/teste.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui/src/lib/teste/teste.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui/src/lib/teste/teste.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<TesteComponent>",
+                    "defaultValue": "{\n  title: 'TesteComponent',\n  component: TesteComponent,\n  decorators: [\n    moduleMetadata({\n      declarations: [],\n      imports: [TesteModule],\n    }),\n  ],\n  argTypes: {\n    backgroundColor: { control: 'color' },\n  },\n}"
+                }
+            ],
             "projects/ui/src/stories/Button.stories.ts": [
                 {
                     "name": "Large",
@@ -791,12 +885,25 @@
                     "description": "",
                     "kind": 180
                 }
+            ],
+            "projects/ui/src/lib/teste/teste.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<TesteComponent>",
+                    "file": "projects/ui/src/lib/teste/teste.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
+                }
             ]
         }
     },
     "routes": [],
     "coverage": {
-        "count": 4,
+        "count": 3,
         "status": "low",
         "files": [
             {
@@ -814,6 +921,26 @@
                 "type": "component",
                 "linktype": "component",
                 "name": "TesteComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui/src/lib/teste/teste.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui/src/lib/teste/teste.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
