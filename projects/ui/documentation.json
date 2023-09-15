@@ -334,6 +334,49 @@
             "stylesData": ""
         },
         {
+            "name": "TesteComponent",
+            "id": "component-TesteComponent-2cf574b65ec6235794b6e1c0a8be3f4d87f29ec6f76466ad7ec871a5451486003cde0d3cc103f71db0664b80fc84451c0b8bf23f633f7d4784043e5c1b0e1709",
+            "file": "projects/ui/src/lib/teste/teste.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "lib-teste",
+            "styleUrls": [
+                "./teste.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./teste.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'lib-teste',\n  templateUrl: './teste.component.html',\n  styleUrls: ['./teste.component.scss']\n})\nexport class TesteComponent {\n\n}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "$color: \"red\";\n\np {\n  color: $color;\n}\n",
+                    "styleUrl": "./teste.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<p>teste works!</p>\n"
+        },
+        {
             "name": "UiComponent",
             "id": "component-UiComponent-ea0f0cba33c7c01e488040246c7db5ebcfa816f6f9f4f3c768b6c850ba23d7c41a5076aca3f42b15071876267a85ca83b382f6951c262f664aec15c7a1abc50e",
             "file": "projects/ui/src/lib/ui.component.ts",
@@ -371,13 +414,13 @@
     "modules": [
         {
             "name": "UiModule",
-            "id": "module-UiModule-0f72cf76f5f89b3935b40c926fb3ae89213e7fb1d9faaa7d33f0bd825e4e92cf67c245ef1213cf4ea995b01248dcf54fb4ada612bea066181c7ac30d091b5663",
+            "id": "module-UiModule-fc66192e466efd2fc030d2c78490187f5fd9f26f53a060ac7532b53e32c79e96b54593abf7c49cd72251eecbf6b80060af451dfc1edf9779badc4b105206197e",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/ui/src/lib/ui.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\nimport { UiComponent } from './ui.component';\n\n\n\n@NgModule({\n  declarations: [\n    UiComponent\n  ],\n  imports: [\n  ],\n  exports: [\n    UiComponent\n  ]\n})\nexport class UiModule { }\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\nimport { UiComponent } from './ui.component';\nimport { TesteComponent } from './teste/teste.component';\n\n\n\n@NgModule({\n  declarations: [\n    UiComponent,\n    TesteComponent\n  ],\n  imports: [\n  ],\n  exports: [\n    UiComponent\n  ]\n})\nexport class UiModule { }\n",
             "children": [
                 {
                     "type": "providers",
@@ -386,6 +429,9 @@
                 {
                     "type": "declarations",
                     "elements": [
+                        {
+                            "name": "TesteComponent"
+                        },
                         {
                             "name": "UiComponent"
                         }
@@ -759,6 +805,15 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "preview",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui/src/lib/teste/teste.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "TesteComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
