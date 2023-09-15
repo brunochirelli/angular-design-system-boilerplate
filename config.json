@@ -1,0 +1,17 @@
+{
+  "source": [
+    "projects/ui/src/lib/styles/tokens/**/*.json"
+  ],
+  "platforms": {
+    "web": {
+      "transformGroup": "web",
+      "buildPath": "projects/ui/src/lib/styles/variables/",
+      "files": [
+        {
+          "destination": "_variables.css",
+          "format": "css/variables"
+        }
+      ]
+    }
+  }
+}
