@@ -1,3 +1,11 @@
 :root {
   --color: red;
 }
+
+.pa {
+  position: absolute;
+  display: flex;
+  width: auto;
+  height: 10px;
+  padding: 5px;
+}

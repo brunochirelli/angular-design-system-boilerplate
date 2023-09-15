@@ -69,6 +69,15 @@
               "projects/ui/src/lib/styles/core.scss"
             ]
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ui/**/*.ts",
+              "projects/ui/**/*.html"
+            ]
+          }
         }
       },
       "schematics": {
