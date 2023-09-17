@@ -22,6 +22,49 @@
     "directives": [],
     "components": [
         {
+            "name": "HelloComponent",
+            "id": "component-HelloComponent-4691a722fb10253e3d67db80ef49e8676f6173d944ec00c5c8609e6e8397ea5f8808bd199a802364f57c6492416af81ee3afb3c6de2986ad1a36a24c742e57c6",
+            "file": "projects/ui/src/lib/components/hello/hello.component.ts",
+            "encapsulation": [],
+            "entryComponents": [],
+            "inputs": [],
+            "outputs": [],
+            "providers": [],
+            "selector": "occ-hello",
+            "styleUrls": [
+                "./hello.component.scss"
+            ],
+            "styles": [],
+            "templateUrl": [
+                "./hello.component.html"
+            ],
+            "viewProviders": [],
+            "hostDirectives": [],
+            "inputsClass": [],
+            "outputsClass": [],
+            "propertiesClass": [],
+            "methodsClass": [],
+            "deprecated": false,
+            "deprecationMessage": "",
+            "hostBindings": [],
+            "hostListeners": [],
+            "standalone": false,
+            "imports": [],
+            "description": "",
+            "rawdescription": "\n",
+            "type": "component",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'occ-hello',\n  templateUrl: './hello.component.html',\n  styleUrls: ['./hello.component.scss'],\n})\nexport class HelloComponent {}\n",
+            "assetsDirs": [],
+            "styleUrlsData": [
+                {
+                    "data": "p {\n  color: var(--color-base-red);\n}\n",
+                    "styleUrl": "./hello.component.scss"
+                }
+            ],
+            "stylesData": "",
+            "templateData": "<p>hello works!</p>\n"
+        },
+        {
             "name": "TesteComponent",
             "id": "component-TesteComponent-0ec8dc620c6c49562f443012ec5096aabb930ce268172b67ed9ad301cd8ef8e69c8306544faf47fd2a2fadd5ff460cff1d10f1f048756b50d5367968cd0ff56d",
             "file": "projects/ui/src/lib/teste/teste.component.ts",
@@ -146,13 +189,13 @@
         },
         {
             "name": "UiModule",
-            "id": "module-UiModule-7a037d450449d908f6e4306b31f284ef4924682285f8da27840354f62bc15c13cb00a0d4fa29b0bff3fab31d7becc1f5c15892cf0fceacbe7d249869b66e9488",
+            "id": "module-UiModule-cb96f9397dbdf0de9b84ad8e01c45dfdc4e8052efe6351f19d89ea1f935ec33f5e8ced5919711308158385c93822f0a6e98f97b2891361ba258154a977031657",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/ui/src/lib/ui.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\n\nimport { UiComponent } from './ui.component';\n\n@NgModule({\n  declarations: [UiComponent],\n  imports: [],\n  exports: [UiComponent],\n})\nexport class UiModule {}\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\n\nimport { UiComponent } from './ui.component';\nimport { HelloComponent } from './components/hello/hello.component';\n\n@NgModule({\n  declarations: [UiComponent, HelloComponent],\n  imports: [],\n  exports: [UiComponent],\n})\nexport class UiModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -161,6 +204,9 @@
                 {
                     "type": "declarations",
                     "elements": [
+                        {
+                            "name": "HelloComponent"
+                        },
                         {
                             "name": "UiComponent"
                         }
@@ -202,6 +248,16 @@
                 "defaultValue": "{}"
             },
             {
+                "name": "Default",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story",
+                "defaultValue": "{}"
+            },
+            {
                 "name": "meta",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -210,6 +266,16 @@
                 "deprecationMessage": "",
                 "type": "Meta<TesteComponent>",
                 "defaultValue": "{\n  title: 'TesteComponent',\n  component: TesteComponent,\n  decorators: [\n    moduleMetadata({\n      declarations: [],\n      imports: [TesteModule],\n    }),\n  ],\n  argTypes: {\n    backgroundColor: { control: 'color' },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<HelloComponent>",
+                "defaultValue": "{\n  title: 'HelloComponent',\n  component: HelloComponent,\n  argTypes: {\n    name: { control: 'text' },\n  },\n}"
             },
             {
                 "name": "preview",
@@ -230,6 +296,17 @@
                 "subtype": "typealias",
                 "rawtype": "StoryObj<TesteComponent>",
                 "file": "projects/ui/src/lib/teste/teste.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 180
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<HelloComponent>",
+                "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -260,6 +337,28 @@
                     "defaultValue": "{\n  title: 'TesteComponent',\n  component: TesteComponent,\n  decorators: [\n    moduleMetadata({\n      declarations: [],\n      imports: [TesteModule],\n    }),\n  ],\n  argTypes: {\n    backgroundColor: { control: 'color' },\n  },\n}"
                 }
             ],
+            "projects/ui/src/lib/components/hello/hello.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<HelloComponent>",
+                    "defaultValue": "{\n  title: 'HelloComponent',\n  component: HelloComponent,\n  argTypes: {\n    name: { control: 'text' },\n  },\n}"
+                }
+            ],
             "projects/ui/.storybook/preview.ts": [
                 {
                     "name": "preview",
@@ -288,6 +387,19 @@
                     "description": "",
                     "kind": 180
                 }
+            ],
+            "projects/ui/src/lib/components/hello/hello.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<HelloComponent>",
+                    "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
+                }
             ]
         }
     },
@@ -302,6 +414,35 @@
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "preview",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui/src/lib/components/hello/hello.component.ts",
+                "type": "component",
+                "linktype": "component",
+                "name": "HelloComponent",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui/src/lib/components/hello/hello.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "Default",
+                "coveragePercent": 0,
+                "coverageCount": "0/1",
+                "status": "low"
+            },
+            {
+                "filePath": "projects/ui/src/lib/components/hello/hello.stories.ts",
+                "type": "variable",
+                "linktype": "miscellaneous",
+                "linksubtype": "variable",
+                "name": "meta",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"

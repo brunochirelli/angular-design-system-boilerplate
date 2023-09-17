@@ -5,10 +5,10 @@
   "platforms": {
     "web": {
       "transformGroup": "web",
-      "buildPath": "projects/ui/src/lib/styles/variables/",
+      "buildPath": "projects/ui/src/lib/styles/",
       "files": [
         {
-          "destination": "_variables.css",
+          "destination": "tokens.css",
           "format": "css/variables"
         }
       ]
