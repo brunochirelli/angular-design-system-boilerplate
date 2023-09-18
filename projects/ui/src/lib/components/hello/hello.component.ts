@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'occ-hello',
+  selector: 'lib-hello',
   templateUrl: './hello.component.html',
   styleUrls: ['./hello.component.scss'],
 })
