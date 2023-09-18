@@ -1,21 +1,7 @@
 {
     "pipes": [],
     "interfaces": [],
-    "injectables": [
-        {
-            "name": "UiService",
-            "id": "injectable-UiService-fbebb72257059cc63bd32a0f840def49aca5236d5b21374249a6a8631c64c4544d2c7305bc4fb16add3eaa44e2b5484e3e2aac30621d86952a51b6b987b755e8",
-            "file": "projects/ui/src/lib/ui.service.ts",
-            "properties": [],
-            "methods": [],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "description": "",
-            "rawdescription": "\n",
-            "sourceCode": "import { Injectable } from '@angular/core';\n\n@Injectable({\n  providedIn: 'root',\n})\nexport class UiService {}\n",
-            "type": "injectable"
-        }
-    ],
+    "injectables": [],
     "guards": [],
     "interceptors": [],
     "classes": [],
@@ -23,14 +9,14 @@
     "components": [
         {
             "name": "HelloComponent",
-            "id": "component-HelloComponent-4691a722fb10253e3d67db80ef49e8676f6173d944ec00c5c8609e6e8397ea5f8808bd199a802364f57c6492416af81ee3afb3c6de2986ad1a36a24c742e57c6",
+            "id": "component-HelloComponent-6919d227fa68faaa6ab94d01059a015e77db71ab904f0f1d616c36c9cd50db4720a8994bb3944a18963a47a297dcf39c67bbd19babd42d2d3f251b5716facbb0",
             "file": "projects/ui/src/lib/components/hello/hello.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
             "providers": [],
-            "selector": "occ-hello",
+            "selector": "lib-hello",
             "styleUrls": [
                 "./hello.component.scss"
             ],
@@ -53,7 +39,7 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'occ-hello',\n  templateUrl: './hello.component.html',\n  styleUrls: ['./hello.component.scss'],\n})\nexport class HelloComponent {}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'lib-hello',\n  templateUrl: './hello.component.html',\n  styleUrls: ['./hello.component.scss'],\n})\nexport class HelloComponent {}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
@@ -62,24 +48,24 @@
                 }
             ],
             "stylesData": "",
-            "templateData": "<p>hello works!</p>\n"
+            "templateData": "<p>Hello</p>\n"
         },
         {
-            "name": "TesteComponent",
-            "id": "component-TesteComponent-0ec8dc620c6c49562f443012ec5096aabb930ce268172b67ed9ad301cd8ef8e69c8306544faf47fd2a2fadd5ff460cff1d10f1f048756b50d5367968cd0ff56d",
-            "file": "projects/ui/src/lib/teste/teste.component.ts",
+            "name": "WorldComponent",
+            "id": "component-WorldComponent-a06feffa7473a76e096e5b5f1057e0f8fc60447dcc427f31bda4fb26db78caeb5993629afd6ac68b459240b4f6b3350f6eaf29a836c19905847b10efd27cae1f",
+            "file": "projects/ui/src/lib/components/world/world.component.ts",
             "encapsulation": [],
             "entryComponents": [],
             "inputs": [],
             "outputs": [],
             "providers": [],
-            "selector": "occ-teste",
+            "selector": "lib-world",
             "styleUrls": [
-                "./teste.component.scss"
+                "./world.component.scss"
             ],
             "styles": [],
             "templateUrl": [
-                "./teste.component.html"
+                "./world.component.html"
             ],
             "viewProviders": [],
             "hostDirectives": [],
@@ -96,62 +82,28 @@
             "description": "",
             "rawdescription": "\n",
             "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'occ-teste',\n  templateUrl: './teste.component.html',\n  styleUrls: ['./teste.component.scss'],\n})\nexport class TesteComponent {}\n",
+            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'lib-world',\n  templateUrl: './world.component.html',\n  styleUrls: ['./world.component.scss'],\n})\nexport class WorldComponent {}\n",
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "$color: red;\n\np {\n  color: $color;\n}\n",
-                    "styleUrl": "./teste.component.scss"
+                    "data": "p { color: var(--color-base-red); }\n",
+                    "styleUrl": "./world.component.scss"
                 }
             ],
             "stylesData": "",
-            "templateData": "<p>teste works!</p>\n<button mat-raised-button color=\"primary\">Button</button>\n"
-        },
-        {
-            "name": "UiComponent",
-            "id": "component-UiComponent-650b20106345d9ad06dc20fa11a5378420a6859f203b318dc8787409c2186400f7a3d08f91552de4ac2799ee59ea49dd598d57cd90df5070841ee76ce508d802",
-            "file": "projects/ui/src/lib/ui.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "occ-ui",
-            "styleUrls": [],
-            "styles": [],
-            "template": "<p>ui works!</p>",
-            "templateUrl": [],
-            "viewProviders": [],
-            "hostDirectives": [],
-            "inputsClass": [],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "standalone": false,
-            "imports": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'occ-ui',\n  template: ` <p>ui works!</p> `,\n  styles: [],\n})\nexport class UiComponent {}\n",
-            "assetsDirs": [],
-            "styleUrlsData": "",
-            "stylesData": ""
+            "templateData": "<p>world works!</p>\n"
         }
     ],
     "modules": [
         {
-            "name": "TesteModule",
-            "id": "module-TesteModule-418be159625812c5de6cb68393bf47a0c5bb3e6ee92e2b4d42fc660aabc04d2256a4ba9135548ca6ab91acfececaa70d93e06aa9afedfd1d77fa28aae6fe975d",
+            "name": "HelloModule",
+            "id": "module-HelloModule-b02b872d41379467131a381df0cc20417e01cfb8b18cf6264c6a057b4f622e72637131db12c24259373871df53675122b108dc2491245f40a0b59d7804d7ab38",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
-            "file": "projects/ui/src/lib/teste/teste.module.ts",
+            "file": "projects/ui/src/lib/components/hello/hello.module.ts",
             "methods": [],
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\nimport { MatButtonModule } from '@angular/material/button';\n\nimport { TesteComponent } from './teste.component';\n\n@NgModule({\n  declarations: [TesteComponent],\n  imports: [CommonModule, MatButtonModule],\n  exports: [TesteComponent],\n})\nexport class TesteModule {}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\n\nimport { HelloComponent } from './hello.component';\n\n@NgModule({\n  declarations: [HelloComponent],\n  imports: [CommonModule],\n  exports: [HelloComponent],\n})\nexport class HelloModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -161,7 +113,7 @@
                     "type": "declarations",
                     "elements": [
                         {
-                            "name": "TesteComponent"
+                            "name": "HelloComponent"
                         }
                     ]
                 },
@@ -173,7 +125,7 @@
                     "type": "exports",
                     "elements": [
                         {
-                            "name": "TesteComponent"
+                            "name": "HelloComponent"
                         }
                     ]
                 },
@@ -188,14 +140,14 @@
             ]
         },
         {
-            "name": "UiModule",
-            "id": "module-UiModule-c00ada10b24a9ec3ecc6af3f2587574ef2000ada36f7f90f26a58f2f1e775806d8a642680fd7726cb0db9d64fe7f844937dac627c30f2936b620787208f6eec9",
+            "name": "WorldModule",
+            "id": "module-WorldModule-805228413cc6377ec8537eac1fa99d51fcab3daf544e610ce2ed24dae67b3ff3f3136e0899cfc86fd3acc60cee646694aa0bccb836ee629b2f1919eface175f8",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
-            "file": "projects/ui/src/lib/ui.module.ts",
+            "file": "projects/ui/src/lib/components/world/world.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\n\nimport { HelloComponent } from './components/hello/hello.component';\nimport { UiComponent } from './ui.component';\n\n@NgModule({\n  declarations: [UiComponent, HelloComponent],\n  imports: [],\n  exports: [UiComponent],\n})\nexport class UiModule {}\n",
+            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\n\nimport { WorldComponent } from './world.component';\n\n@NgModule({\n  declarations: [WorldComponent],\n  imports: [CommonModule],\n  exports: [WorldComponent],\n})\nexport class WorldModule {}\n",
             "children": [
                 {
                     "type": "providers",
@@ -205,10 +157,7 @@
                     "type": "declarations",
                     "elements": [
                         {
-                            "name": "HelloComponent"
-                        },
-                        {
-                            "name": "UiComponent"
+                            "name": "WorldComponent"
                         }
                     ]
                 },
@@ -220,7 +169,7 @@
                     "type": "exports",
                     "elements": [
                         {
-                            "name": "UiComponent"
+                            "name": "WorldComponent"
                         }
                     ]
                 },
@@ -241,7 +190,7 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/teste/teste.stories.ts",
+                "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
@@ -251,21 +200,11 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
+                "file": "projects/ui/src/lib/components/world/world.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "type": "Story",
                 "defaultValue": "{}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/ui/src/lib/teste/teste.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<TesteComponent>",
-                "defaultValue": "{\n  title: 'TesteComponent',\n  component: TesteComponent,\n  decorators: [\n    moduleMetadata({\n      declarations: [],\n      imports: [TesteModule],\n    }),\n  ],\n  argTypes: {\n    backgroundColor: { control: 'color' },\n  },\n}"
             },
             {
                 "name": "meta",
@@ -276,6 +215,16 @@
                 "deprecationMessage": "",
                 "type": "Meta<HelloComponent>",
                 "defaultValue": "{\n  title: 'HelloComponent',\n  component: HelloComponent,\n  argTypes: {\n    name: { control: 'text' },\n  },\n}"
+            },
+            {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/components/world/world.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<WorldComponent>",
+                "defaultValue": "{\n  title: 'WorldComponent',\n  component: WorldComponent,\n  argTypes: {\n    name: { control: 'text' },\n  },\n}"
             },
             {
                 "name": "preview",
@@ -294,8 +243,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<TesteComponent>",
-                "file": "projects/ui/src/lib/teste/teste.stories.ts",
+                "rawtype": "StoryObj<HelloComponent>",
+                "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -305,8 +254,8 @@
                 "name": "Story",
                 "ctype": "miscellaneous",
                 "subtype": "typealias",
-                "rawtype": "StoryObj<HelloComponent>",
-                "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
+                "rawtype": "StoryObj<WorldComponent>",
+                "file": "projects/ui/src/lib/components/world/world.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
                 "description": "",
@@ -315,28 +264,6 @@
         ],
         "enumerations": [],
         "groupedVariables": {
-            "projects/ui/src/lib/teste/teste.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/src/lib/teste/teste.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{}"
-                },
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/src/lib/teste/teste.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<TesteComponent>",
-                    "defaultValue": "{\n  title: 'TesteComponent',\n  component: TesteComponent,\n  decorators: [\n    moduleMetadata({\n      declarations: [],\n      imports: [TesteModule],\n    }),\n  ],\n  argTypes: {\n    backgroundColor: { control: 'color' },\n  },\n}"
-                }
-            ],
             "projects/ui/src/lib/components/hello/hello.stories.ts": [
                 {
                     "name": "Default",
@@ -359,6 +286,28 @@
                     "defaultValue": "{\n  title: 'HelloComponent',\n  component: HelloComponent,\n  argTypes: {\n    name: { control: 'text' },\n  },\n}"
                 }
             ],
+            "projects/ui/src/lib/components/world/world.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui/src/lib/components/world/world.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui/src/lib/components/world/world.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<WorldComponent>",
+                    "defaultValue": "{\n  title: 'WorldComponent',\n  component: WorldComponent,\n  argTypes: {\n    name: { control: 'text' },\n  },\n}"
+                }
+            ],
             "projects/ui/.storybook/preview.ts": [
                 {
                     "name": "preview",
@@ -375,19 +324,6 @@
         "groupedFunctions": {},
         "groupedEnumerations": {},
         "groupedTypeAliases": {
-            "projects/ui/src/lib/teste/teste.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<TesteComponent>",
-                    "file": "projects/ui/src/lib/teste/teste.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 180
-                }
-            ],
             "projects/ui/src/lib/components/hello/hello.stories.ts": [
                 {
                     "name": "Story",
@@ -395,6 +331,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<HelloComponent>",
                     "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
+                }
+            ],
+            "projects/ui/src/lib/components/world/world.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<WorldComponent>",
+                    "file": "projects/ui/src/lib/components/world/world.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
@@ -448,16 +397,16 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ui/src/lib/teste/teste.component.ts",
+                "filePath": "projects/ui/src/lib/components/world/world.component.ts",
                 "type": "component",
                 "linktype": "component",
-                "name": "TesteComponent",
+                "name": "WorldComponent",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
             },
             {
-                "filePath": "projects/ui/src/lib/teste/teste.stories.ts",
+                "filePath": "projects/ui/src/lib/components/world/world.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
@@ -467,29 +416,11 @@
                 "status": "low"
             },
             {
-                "filePath": "projects/ui/src/lib/teste/teste.stories.ts",
+                "filePath": "projects/ui/src/lib/components/world/world.stories.ts",
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
                 "name": "meta",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/ui/src/lib/ui.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "UiComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/ui/src/lib/ui.service.ts",
-                "type": "injectable",
-                "linktype": "injectable",
-                "name": "UiService",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
