@@ -1,13 +1,15 @@
 {
-  "name": "angular-design-system-boilerplate",
-  "version": "0.0.0",
+  "name": "@brunochirelli/angular-design-system-boilerplate",
+  "version": "0.0.1",
+  "description": "Angular Design System Boilerplate",
+  "author": "Bruno Chirelli",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "watch": "npm run build:tokens && ng build --watch --configuration development",
-    "build": "npm run build:tokens && npm run build:lib",
-    "build:css": "sass 'projects/ui/src/lib/styles/core.scss' 'projects/ui/src/lib/styles/core.css'",
-    "build:lib": "ng build",
+    "build": "npm run format && npm run lint && npm run build:tokens && npm run build:lib",
+    "build:css": "rollup -c",
+    "build:lib": "ng build && npm run build:css",
     "build:tokens": "style-dictionary build",
     "build-storybook": "npm run build:tokens && ng run ui:build-storybook",
     "storybook": "npm run build:tokens && ng run ui:storybook",
@@ -18,7 +20,6 @@
     "test": "ng test",
     "prepare": "husky install"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^16.2.5",
     "@angular/cdk": "^16.2.4",
@@ -74,6 +75,7 @@
     "prettier-eslint": "^15.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "rollup-plugin-scss": "^4.0.0",
     "storybook": "^7.4.2",
     "stylelint": "^15.10.3",
     "stylelint-config-idiomatic-order": "^9.0.0",

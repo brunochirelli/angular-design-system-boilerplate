@@ -5,3 +5,7 @@
 export * from './lib/ui.service';
 export * from './lib/ui.component';
 export * from './lib/ui.module';
+export * from './lib/components/hello/hello.component';
+
+export * from './lib/teste/teste.component';
+export * from './lib/teste/teste.module';
