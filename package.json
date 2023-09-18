@@ -11,6 +11,7 @@
     "build:tokens": "style-dictionary build",
     "build-storybook": "npm run build:tokens && ng run ui:build-storybook",
     "storybook": "npm run build:tokens && ng run ui:storybook",
+    "format": "prettier --write \"projects/ui/src/**/*.{css,scss,html,ts,json}\"",
     "lint:css": "stylelint \"projects/ui/src/**/*.{css,scss}\" --config .stylelintrc.json --fix",
     "lint:js": "ng lint",
     "lint": "npm run lint:css && npm run lint:js",
