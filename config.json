@@ -8,7 +8,7 @@
       "buildPath": "projects/ui/src/lib/styles/",
       "files": [
         {
-          "destination": "tokens.css",
+          "destination": "_tokens.scss",
           "format": "css/variables"
         }
       ]

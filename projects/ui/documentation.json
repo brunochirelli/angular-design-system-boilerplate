@@ -189,13 +189,13 @@
         },
         {
             "name": "UiModule",
-            "id": "module-UiModule-cb96f9397dbdf0de9b84ad8e01c45dfdc4e8052efe6351f19d89ea1f935ec33f5e8ced5919711308158385c93822f0a6e98f97b2891361ba258154a977031657",
+            "id": "module-UiModule-c00ada10b24a9ec3ecc6af3f2587574ef2000ada36f7f90f26a58f2f1e775806d8a642680fd7726cb0db9d64fe7f844937dac627c30f2936b620787208f6eec9",
             "description": "",
             "deprecationMessage": "",
             "deprecated": false,
             "file": "projects/ui/src/lib/ui.module.ts",
             "methods": [],
-            "sourceCode": "import { NgModule } from '@angular/core';\n\nimport { UiComponent } from './ui.component';\nimport { HelloComponent } from './components/hello/hello.component';\n\n@NgModule({\n  declarations: [UiComponent, HelloComponent],\n  imports: [],\n  exports: [UiComponent],\n})\nexport class UiModule {}\n",
+            "sourceCode": "import { NgModule } from '@angular/core';\n\nimport { HelloComponent } from './components/hello/hello.component';\nimport { UiComponent } from './ui.component';\n\n@NgModule({\n  declarations: [UiComponent, HelloComponent],\n  imports: [],\n  exports: [UiComponent],\n})\nexport class UiModule {}\n",
             "children": [
                 {
                     "type": "providers",
