@@ -8,7 +8,8 @@
     "stylelint-order"
   ],
   "ignoreFiles": [
-    "**/*.ts"
+    "**/*.ts",
+    "./projects/ui/src/lib/styles/_tokens.scss"
   ],
   "rules": {
     "no-empty-source": null

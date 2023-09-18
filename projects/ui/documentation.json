@@ -277,16 +277,6 @@
                 "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{}"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
                 "file": "projects/ui/src/lib/components/material-example/material-example.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
@@ -304,14 +294,14 @@
                 "defaultValue": "{}"
             },
             {
-                "name": "meta",
+                "name": "Default",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta<HelloComponent>",
-                "defaultValue": "{\n  title: 'HelloComponent',\n  component: HelloComponent,\n  argTypes: {\n    name: { control: 'text' },\n  },\n}"
+                "type": "Story",
+                "defaultValue": "{}"
             },
             {
                 "name": "meta",
@@ -334,6 +324,16 @@
                 "defaultValue": "{\n  title: 'WorldComponent',\n  component: WorldComponent,\n  argTypes: {\n    name: { control: 'text' },\n  },\n}"
             },
             {
+                "name": "meta",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Meta<HelloComponent>",
+                "defaultValue": "{\n  title: 'HelloComponent',\n  component: HelloComponent,\n  argTypes: {\n    name: { control: 'text' },\n  },\n}"
+            },
+            {
                 "name": "preview",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -346,17 +346,6 @@
         ],
         "functions": [],
         "typealiases": [
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<HelloComponent>",
-                "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 180
-            },
             {
                 "name": "Story",
                 "ctype": "miscellaneous",
@@ -378,32 +367,21 @@
                 "deprecationMessage": "",
                 "description": "",
                 "kind": 180
+            },
+            {
+                "name": "Story",
+                "ctype": "miscellaneous",
+                "subtype": "typealias",
+                "rawtype": "StoryObj<HelloComponent>",
+                "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "description": "",
+                "kind": 180
             }
         ],
         "enumerations": [],
         "groupedVariables": {
-            "projects/ui/src/lib/components/hello/hello.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{}"
-                },
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<HelloComponent>",
-                    "defaultValue": "{\n  title: 'HelloComponent',\n  component: HelloComponent,\n  argTypes: {\n    name: { control: 'text' },\n  },\n}"
-                }
-            ],
             "projects/ui/src/lib/components/material-example/material-example.stories.ts": [
                 {
                     "name": "Default",
@@ -448,6 +426,28 @@
                     "defaultValue": "{\n  title: 'WorldComponent',\n  component: WorldComponent,\n  argTypes: {\n    name: { control: 'text' },\n  },\n}"
                 }
             ],
+            "projects/ui/src/lib/components/hello/hello.stories.ts": [
+                {
+                    "name": "Default",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story",
+                    "defaultValue": "{}"
+                },
+                {
+                    "name": "meta",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Meta<HelloComponent>",
+                    "defaultValue": "{\n  title: 'HelloComponent',\n  component: HelloComponent,\n  argTypes: {\n    name: { control: 'text' },\n  },\n}"
+                }
+            ],
             "projects/ui/.storybook/preview.ts": [
                 {
                     "name": "preview",
@@ -464,19 +464,6 @@
         "groupedFunctions": {},
         "groupedEnumerations": {},
         "groupedTypeAliases": {
-            "projects/ui/src/lib/components/hello/hello.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<HelloComponent>",
-                    "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 180
-                }
-            ],
             "projects/ui/src/lib/components/material-example/material-example.stories.ts": [
                 {
                     "name": "Story",
@@ -497,6 +484,19 @@
                     "subtype": "typealias",
                     "rawtype": "StoryObj<WorldComponent>",
                     "file": "projects/ui/src/lib/components/world/world.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "description": "",
+                    "kind": 180
+                }
+            ],
+            "projects/ui/src/lib/components/hello/hello.stories.ts": [
+                {
+                    "name": "Story",
+                    "ctype": "miscellaneous",
+                    "subtype": "typealias",
+                    "rawtype": "StoryObj<HelloComponent>",
+                    "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
                     "description": "",
