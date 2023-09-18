@@ -57,7 +57,7 @@
             "assetsDirs": [],
             "styleUrlsData": [
                 {
-                    "data": "p {\n  color: var(--color-base-red);\n}\n",
+                    "data": "p {\n  color: var(--color-base-green);\n}\n",
                     "styleUrl": "./hello.component.scss"
                 }
             ],

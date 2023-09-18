@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 
-import { UiComponent } from './ui.component';
 import { HelloComponent } from './components/hello/hello.component';
+import { UiComponent } from './ui.component';
 
 @NgModule({
   declarations: [UiComponent, HelloComponent],
