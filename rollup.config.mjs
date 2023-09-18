@@ -7,6 +7,7 @@ export default {
     scss({
       fileName: "ui/lib/styles/main.css",
       outputStyle: "compressed",
+      includePaths: ["./node_modules/"],
     }),
   ],
 };

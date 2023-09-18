@@ -1,430 +1,441 @@
 {
-    "pipes": [],
-    "interfaces": [],
-    "injectables": [],
-    "guards": [],
-    "interceptors": [],
-    "classes": [],
-    "directives": [],
-    "components": [
+  "pipes": [],
+  "interfaces": [],
+  "injectables": [],
+  "injectables": [],
+  "guards": [],
+  "interceptors": [],
+  "classes": [],
+  "directives": [],
+  "components": [
+    {
+      "name": "HelloComponent",
+      "id": "component-HelloComponent-6919d227fa68faaa6ab94d01059a015e77db71ab904f0f1d616c36c9cd50db4720a8994bb3944a18963a47a297dcf39c67bbd19babd42d2d3f251b5716facbb0",
+      "id": "component-HelloComponent-6919d227fa68faaa6ab94d01059a015e77db71ab904f0f1d616c36c9cd50db4720a8994bb3944a18963a47a297dcf39c67bbd19babd42d2d3f251b5716facbb0",
+      "file": "projects/ui/src/lib/components/hello/hello.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "lib-hello",
+      "selector": "lib-hello",
+      "styleUrls": [
+        "./hello.component.scss"
+      ],
+      "styles": [],
+      "templateUrl": [
+        "./hello.component.html"
+      ],
+      "viewProviders": [],
+      "hostDirectives": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "standalone": false,
+      "imports": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'lib-hello',\n  templateUrl: './hello.component.html',\n  styleUrls: ['./hello.component.scss'],\n})\nexport class HelloComponent {}\n",
+      "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'lib-hello',\n  templateUrl: './hello.component.html',\n  styleUrls: ['./hello.component.scss'],\n})\nexport class HelloComponent {}\n",
+      "assetsDirs": [],
+      "styleUrlsData": [
         {
-            "name": "HelloComponent",
-            "id": "component-HelloComponent-6919d227fa68faaa6ab94d01059a015e77db71ab904f0f1d616c36c9cd50db4720a8994bb3944a18963a47a297dcf39c67bbd19babd42d2d3f251b5716facbb0",
-            "file": "projects/ui/src/lib/components/hello/hello.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "lib-hello",
-            "styleUrls": [
-                "./hello.component.scss"
-            ],
-            "styles": [],
-            "templateUrl": [
-                "./hello.component.html"
-            ],
-            "viewProviders": [],
-            "hostDirectives": [],
-            "inputsClass": [],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "standalone": false,
-            "imports": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'lib-hello',\n  templateUrl: './hello.component.html',\n  styleUrls: ['./hello.component.scss'],\n})\nexport class HelloComponent {}\n",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": "p {\n  color: var(--color-base-green);\n}\n",
-                    "styleUrl": "./hello.component.scss"
-                }
-            ],
-            "stylesData": "",
-            "templateData": "<p>Hello</p>\n"
-        },
-        {
-            "name": "WorldComponent",
-            "id": "component-WorldComponent-a06feffa7473a76e096e5b5f1057e0f8fc60447dcc427f31bda4fb26db78caeb5993629afd6ac68b459240b4f6b3350f6eaf29a836c19905847b10efd27cae1f",
-            "file": "projects/ui/src/lib/components/world/world.component.ts",
-            "encapsulation": [],
-            "entryComponents": [],
-            "inputs": [],
-            "outputs": [],
-            "providers": [],
-            "selector": "lib-world",
-            "styleUrls": [
-                "./world.component.scss"
-            ],
-            "styles": [],
-            "templateUrl": [
-                "./world.component.html"
-            ],
-            "viewProviders": [],
-            "hostDirectives": [],
-            "inputsClass": [],
-            "outputsClass": [],
-            "propertiesClass": [],
-            "methodsClass": [],
-            "deprecated": false,
-            "deprecationMessage": "",
-            "hostBindings": [],
-            "hostListeners": [],
-            "standalone": false,
-            "imports": [],
-            "description": "",
-            "rawdescription": "\n",
-            "type": "component",
-            "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'lib-world',\n  templateUrl: './world.component.html',\n  styleUrls: ['./world.component.scss'],\n})\nexport class WorldComponent {}\n",
-            "assetsDirs": [],
-            "styleUrlsData": [
-                {
-                    "data": "p { color: var(--color-base-red); }\n",
-                    "styleUrl": "./world.component.scss"
-                }
-            ],
-            "stylesData": "",
-            "templateData": "<p>world works!</p>\n"
+          "data": "p {\n  color: var(--color-base-green);\n}\n",
+          "styleUrl": "./hello.component.scss"
         }
-    ],
-    "modules": [
-        {
-            "name": "HelloModule",
-            "id": "module-HelloModule-b02b872d41379467131a381df0cc20417e01cfb8b18cf6264c6a057b4f622e72637131db12c24259373871df53675122b108dc2491245f40a0b59d7804d7ab38",
-            "description": "",
-            "deprecationMessage": "",
-            "deprecated": false,
-            "file": "projects/ui/src/lib/components/hello/hello.module.ts",
-            "methods": [],
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\n\nimport { HelloComponent } from './hello.component';\n\n@NgModule({\n  declarations: [HelloComponent],\n  imports: [CommonModule],\n  exports: [HelloComponent],\n})\nexport class HelloModule {}\n",
-            "children": [
-                {
-                    "type": "providers",
-                    "elements": []
-                },
-                {
-                    "type": "declarations",
-                    "elements": [
-                        {
-                            "name": "HelloComponent"
-                        }
-                    ]
-                },
-                {
-                    "type": "imports",
-                    "elements": []
-                },
-                {
-                    "type": "exports",
-                    "elements": [
-                        {
-                            "name": "HelloComponent"
-                        }
-                    ]
-                },
-                {
-                    "type": "bootstrap",
-                    "elements": []
-                },
-                {
-                    "type": "classes",
-                    "elements": []
-                }
-            ]
-        },
-        {
-            "name": "WorldModule",
-            "id": "module-WorldModule-805228413cc6377ec8537eac1fa99d51fcab3daf544e610ce2ed24dae67b3ff3f3136e0899cfc86fd3acc60cee646694aa0bccb836ee629b2f1919eface175f8",
-            "description": "",
-            "deprecationMessage": "",
-            "deprecated": false,
-            "file": "projects/ui/src/lib/components/world/world.module.ts",
-            "methods": [],
-            "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\n\nimport { WorldComponent } from './world.component';\n\n@NgModule({\n  declarations: [WorldComponent],\n  imports: [CommonModule],\n  exports: [WorldComponent],\n})\nexport class WorldModule {}\n",
-            "children": [
-                {
-                    "type": "providers",
-                    "elements": []
-                },
-                {
-                    "type": "declarations",
-                    "elements": [
-                        {
-                            "name": "WorldComponent"
-                        }
-                    ]
-                },
-                {
-                    "type": "imports",
-                    "elements": []
-                },
-                {
-                    "type": "exports",
-                    "elements": [
-                        {
-                            "name": "WorldComponent"
-                        }
-                    ]
-                },
-                {
-                    "type": "bootstrap",
-                    "elements": []
-                },
-                {
-                    "type": "classes",
-                    "elements": []
-                }
-            ]
-        }
-    ],
-    "miscellaneous": {
-        "variables": [
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{}"
-            },
-            {
-                "name": "Default",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/ui/src/lib/components/world/world.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "{}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<HelloComponent>",
-                "defaultValue": "{\n  title: 'HelloComponent',\n  component: HelloComponent,\n  argTypes: {\n    name: { control: 'text' },\n  },\n}"
-            },
-            {
-                "name": "meta",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/ui/src/lib/components/world/world.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Meta<WorldComponent>",
-                "defaultValue": "{\n  title: 'WorldComponent',\n  component: WorldComponent,\n  argTypes: {\n    name: { control: 'text' },\n  },\n}"
-            },
-            {
-                "name": "preview",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "projects/ui/.storybook/preview.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Preview",
-                "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: '^on[A-Z].*' },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/,\n      },\n    },\n  },\n}"
-            }
-        ],
-        "functions": [],
-        "typealiases": [
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<HelloComponent>",
-                "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 180
-            },
-            {
-                "name": "Story",
-                "ctype": "miscellaneous",
-                "subtype": "typealias",
-                "rawtype": "StoryObj<WorldComponent>",
-                "file": "projects/ui/src/lib/components/world/world.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "description": "",
-                "kind": 180
-            }
-        ],
-        "enumerations": [],
-        "groupedVariables": {
-            "projects/ui/src/lib/components/hello/hello.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{}"
-                },
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<HelloComponent>",
-                    "defaultValue": "{\n  title: 'HelloComponent',\n  component: HelloComponent,\n  argTypes: {\n    name: { control: 'text' },\n  },\n}"
-                }
-            ],
-            "projects/ui/src/lib/components/world/world.stories.ts": [
-                {
-                    "name": "Default",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/src/lib/components/world/world.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "{}"
-                },
-                {
-                    "name": "meta",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/src/lib/components/world/world.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Meta<WorldComponent>",
-                    "defaultValue": "{\n  title: 'WorldComponent',\n  component: WorldComponent,\n  argTypes: {\n    name: { control: 'text' },\n  },\n}"
-                }
-            ],
-            "projects/ui/.storybook/preview.ts": [
-                {
-                    "name": "preview",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "projects/ui/.storybook/preview.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "Preview",
-                    "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: '^on[A-Z].*' },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/,\n      },\n    },\n  },\n}"
-                }
-            ]
-        },
-        "groupedFunctions": {},
-        "groupedEnumerations": {},
-        "groupedTypeAliases": {
-            "projects/ui/src/lib/components/hello/hello.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<HelloComponent>",
-                    "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 180
-                }
-            ],
-            "projects/ui/src/lib/components/world/world.stories.ts": [
-                {
-                    "name": "Story",
-                    "ctype": "miscellaneous",
-                    "subtype": "typealias",
-                    "rawtype": "StoryObj<WorldComponent>",
-                    "file": "projects/ui/src/lib/components/world/world.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "description": "",
-                    "kind": 180
-                }
-            ]
-        }
+      ],
+      "stylesData": "",
+      "templateData": "<p>Hello</p>\n""templateData": "<p>Hello</p>\n"
     },
-    "routes": [],
-    "coverage": {
-        "count": 0,
-        "status": "low",
-        "files": [
-            {
-                "filePath": "projects/ui/.storybook/preview.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "preview",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/ui/src/lib/components/hello/hello.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "HelloComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/ui/src/lib/components/hello/hello.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Default",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/ui/src/lib/components/hello/hello.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "meta",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/ui/src/lib/components/world/world.component.ts",
-                "type": "component",
-                "linktype": "component",
-                "name": "WorldComponent",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/ui/src/lib/components/world/world.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "Default",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "projects/ui/src/lib/components/world/world.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "meta",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            }
-        ]
+    {
+      "name": "WorldComponent",
+      "id": "component-WorldComponent-a06feffa7473a76e096e5b5f1057e0f8fc60447dcc427f31bda4fb26db78caeb5993629afd6ac68b459240b4f6b3350f6eaf29a836c19905847b10efd27cae1f",
+      "file": "projects/ui/src/lib/components/world/world.component.ts",
+      "encapsulation": [],
+      "entryComponents": [],
+      "inputs": [],
+      "outputs": [],
+      "providers": [],
+      "selector": "lib-world",
+      "styleUrls": [
+        "./world.component.scss"
+      ],
+      "styles": [],
+      "templateUrl": [
+        "./world.component.html"
+      ],
+      "viewProviders": [],
+      "hostDirectives": [],
+      "inputsClass": [],
+      "outputsClass": [],
+      "propertiesClass": [],
+      "methodsClass": [],
+      "deprecated": false,
+      "deprecationMessage": "",
+      "hostBindings": [],
+      "hostListeners": [],
+      "standalone": false,
+      "imports": [],
+      "description": "",
+      "rawdescription": "\n",
+      "type": "component",
+      "sourceCode": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'lib-world',\n  templateUrl: './world.component.html',\n  styleUrls: ['./world.component.scss'],\n})\nexport class WorldComponent {}\n",
+      "assetsDirs": [],
+      "styleUrlsData": [
+        {
+          "data": "p { color: var(--color-base-red); }\n",
+          "styleUrl": "./world.component.scss"
+        }
+      ],
+      "stylesData": "",
+      "templateData": "<p>world works!</p>\n"
     }
+  ],
+  "modules": [
+    {
+      "name": "HelloModule",
+      "id": "module-HelloModule-b02b872d41379467131a381df0cc20417e01cfb8b18cf6264c6a057b4f622e72637131db12c24259373871df53675122b108dc2491245f40a0b59d7804d7ab38",
+      "name": "HelloModule",
+      "id": "module-HelloModule-b02b872d41379467131a381df0cc20417e01cfb8b18cf6264c6a057b4f622e72637131db12c24259373871df53675122b108dc2491245f40a0b59d7804d7ab38",
+      "description": "",
+      "deprecationMessage": "",
+      "deprecated": false,
+      "file": "projects/ui/src/lib/components/hello/hello.module.ts",
+      "file": "projects/ui/src/lib/components/hello/hello.module.ts",
+      "methods": [],
+      "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\n\nimport { HelloComponent } from './hello.component';\n\n@NgModule({\n  declarations: [HelloComponent],\n  imports: [CommonModule],\n  exports: [HelloComponent],\n})\nexport class HelloModule {}\n",
+      "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\n\nimport { HelloComponent } from './hello.component';\n\n@NgModule({\n  declarations: [HelloComponent],\n  imports: [CommonModule],\n  exports: [HelloComponent],\n})\nexport class HelloModule {}\n",
+      "children": [
+        {
+          "type": "providers",
+          "elements": []
+        },
+        {
+          "type": "declarations",
+          "elements": [
+            {
+              "name": "HelloComponent""name": "HelloComponent"
+            }
+          ]
+        },
+        {
+          "type": "imports",
+          "elements": []
+        },
+        {
+          "type": "exports",
+          "elements": [
+            {
+              "name": "HelloComponent""name": "HelloComponent"
+            }
+          ]
+        },
+        {
+          "type": "bootstrap",
+          "elements": []
+        },
+        {
+          "type": "classes",
+          "elements": []
+        }
+      ]
+    },
+    {
+      "name": "WorldModule",
+      "id": "module-WorldModule-805228413cc6377ec8537eac1fa99d51fcab3daf544e610ce2ed24dae67b3ff3f3136e0899cfc86fd3acc60cee646694aa0bccb836ee629b2f1919eface175f8",
+      "description": "",
+      "deprecationMessage": "",
+      "deprecated": false,
+      "file": "projects/ui/src/lib/components/world/world.module.ts",
+      "methods": [],
+      "sourceCode": "import { CommonModule } from '@angular/common';\nimport { NgModule } from '@angular/core';\n\nimport { WorldComponent } from './world.component';\n\n@NgModule({\n  declarations: [WorldComponent],\n  imports: [CommonModule],\n  exports: [WorldComponent],\n})\nexport class WorldModule {}\n",
+      "children": [
+        {
+          "type": "providers",
+          "elements": []
+        },
+        {
+          "type": "declarations",
+          "elements": [
+            {
+              "name": "WorldComponent"
+            }
+          ]
+        },
+        {
+          "type": "imports",
+          "elements": []
+        },
+        {
+          "type": "exports",
+          "elements": [
+            {
+              "name": "WorldComponent""name": "WorldComponent"
+            }
+          ]
+        },
+        {
+          "type": "bootstrap",
+          "elements": []
+        },
+        {
+          "type": "classes",
+          "elements": []
+        }
+      ]
+    }
+  ],
+  "miscellaneous": {
+    "variables": [
+      {
+        "name": "Default",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
+        "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "Story",
+        "defaultValue": "{}"
+      },
+      {
+        "name": "Default",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "projects/ui/src/lib/components/world/world.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "Story",
+        "defaultValue": "{}"
+      },
+      {
+        "name": "Default",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "Meta<HelloComponent>",
+        "defaultValue": "{\n  title: 'HelloComponent',\n  component: HelloComponent,\n  argTypes: {\n    name: { control: 'text' },\n  },\n}"
+      },
+      {
+        "name": "meta",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "projects/ui/src/lib/components/world/world.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "Meta<WorldComponent>",
+        "defaultValue": "{\n  title: 'WorldComponent',\n  component: WorldComponent,\n  argTypes: {\n    name: { control: 'text' },\n  },\n}"
+      },
+      {
+        "name": "preview",
+        "ctype": "miscellaneous",
+        "subtype": "variable",
+        "file": "projects/ui/.storybook/preview.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "type": "Preview",
+        "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: '^on[A-Z].*' },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/,\n      },\n    },\n  },\n}"
+      }
+    ],
+    "functions": [],
+    "typealiases": [
+      {
+        "name": "Story",
+        "ctype": "miscellaneous",
+        "subtype": "typealias",
+        "rawtype": "StoryObj<HelloComponent>",
+        "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "description": "",
+        "kind": 180
+      },
+      {
+        "name": "Story",
+        "ctype": "miscellaneous",
+        "subtype": "typealias",
+        "rawtype": "StoryObj<WorldComponent>",
+        "file": "projects/ui/src/lib/components/world/world.stories.ts",
+        "rawtype": "StoryObj<WorldComponent>",
+        "file": "projects/ui/src/lib/components/world/world.stories.ts",
+        "deprecated": false,
+        "deprecationMessage": "",
+        "description": "",
+        "kind": 180
+      }
+    ],
+    "enumerations": [],
+    "groupedVariables": {
+      "projects/ui/src/lib/components/hello/hello.stories.ts": [
+        {
+          "name": "Default",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "Story",
+          "defaultValue": "{}"
+        },
+        {
+          "name": "meta",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "Meta<HelloComponent>",
+          "defaultValue": "{\n  title: 'HelloComponent',\n  component: HelloComponent,\n  argTypes: {\n    name: { control: 'text' },\n  },\n}"
+        }
+      ],
+      "projects/ui/src/lib/components/world/world.stories.ts": [
+        {
+          "name": "Default",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "projects/ui/src/lib/components/world/world.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "Story",
+          "defaultValue": "{}"
+        },
+        {
+          "name": "meta",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "projects/ui/src/lib/components/world/world.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "Meta<WorldComponent>",
+          "defaultValue": "{\n  title: 'WorldComponent',\n  component: WorldComponent,\n  argTypes: {\n    name: { control: 'text' },\n  },\n}"
+        }
+      ],
+      "projects/ui/.storybook/preview.ts": [
+        {
+          "name": "preview",
+          "ctype": "miscellaneous",
+          "subtype": "variable",
+          "file": "projects/ui/.storybook/preview.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "type": "Preview",
+          "defaultValue": "{\n  parameters: {\n    actions: { argTypesRegex: '^on[A-Z].*' },\n    controls: {\n      matchers: {\n        color: /(background|color)$/i,\n        date: /Date$/,\n      },\n    },\n  },\n}"
+        }
+      ]
+    },
+    "groupedFunctions": {},
+    "groupedEnumerations": {},
+    "groupedTypeAliases": {
+      "projects/ui/src/lib/components/hello/hello.stories.ts": [
+        {
+          "name": "Story",
+          "ctype": "miscellaneous",
+          "subtype": "typealias",
+          "rawtype": "StoryObj<HelloComponent>",
+          "file": "projects/ui/src/lib/components/hello/hello.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "description": "",
+          "kind": 180
+        }
+      ],
+      "projects/ui/src/lib/components/world/world.stories.ts": [
+        {
+          "name": "Story",
+          "ctype": "miscellaneous",
+          "subtype": "typealias",
+          "rawtype": "StoryObj<WorldComponent>",
+          "file": "projects/ui/src/lib/components/world/world.stories.ts",
+          "deprecated": false,
+          "deprecationMessage": "",
+          "description": "",
+          "kind": 180
+        }
+      ]
+    }
+  },
+  "routes": [],
+  "coverage": {
+    "count": 0,
+    "status": "low",
+    "files": [
+      {
+        "filePath": "projects/ui/.storybook/preview.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "preview",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/ui/src/lib/components/hello/hello.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "HelloComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/ui/src/lib/components/hello/hello.stories.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "Default",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/ui/src/lib/components/hello/hello.stories.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "meta",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/ui/src/lib/components/world/world.component.ts",
+        "type": "component",
+        "linktype": "component",
+        "name": "WorldComponent",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/ui/src/lib/components/world/world.stories.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "Default",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      },
+      {
+        "filePath": "projects/ui/src/lib/components/world/world.stories.ts",
+        "type": "variable",
+        "linktype": "miscellaneous",
+        "linksubtype": "variable",
+        "name": "meta",
+        "coveragePercent": 0,
+        "coverageCount": "0/1",
+        "status": "low"
+      }
+    ]
+  }
 }
